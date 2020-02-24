@@ -10,4 +10,6 @@ class SaleOrder(models.Model):
         'sale.order.cancel.reason',
         string="Reason for cancellation",
         readonly=True,
-        ondelete="restrict")
+        ondelete="restrict",
+        tracking=True
+    )
