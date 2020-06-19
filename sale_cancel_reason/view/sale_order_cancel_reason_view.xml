@@ -23,11 +23,12 @@
     <record model="ir.actions.act_window" id="action_sale_order_cancel_reason">
         <field name="name">Sale Order Cancel Reason</field>
         <field name="res_model">sale.order.cancel.reason</field>
+        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="menu_sale_order_cancel_reason"
-      parent="sale.menu_sale_config"
+      parent="sales_team.menu_sale_config"
       name="Sale Order Cancel Reasons"
       action="action_sale_order_cancel_reason"
       sequence="150" groups="sales_team.group_sale_manager"/>
